@@ -1,0 +1,42 @@
+{
+  "name": "agent-handrail",
+  "version": "0.1.0",
+  "description": "A lightweight, incremental 'handrail' (扶手) safety/usability layer for any agent harness — adds boundary self-check, no-overreach decision, output desensitization, frontend-visible delivery, and falsifiability on top of WorkBuddy / DeepSeek Harness / Claude Code without touching their internals.",
+  "author": {
+    "name": "蒋平 (Jiang Ping) / PDSS",
+    "email": ""
+  },
+  "agents": ["./agents/agent-handrail.md"],
+  "skills": ["./skills/handrail-core", "./skills/handrail-runtime"],
+  "expertType": "agent",
+  "agentName": "agent-handrail",
+  "displayName": {
+    "en": "Agent Handrail",
+    "zh": "扶手·安全扶手"
+  },
+  "profession": {
+    "en": "Agent Safety & Usability Handrail",
+    "zh": "智能体安全可用扶手层"
+  },
+  "displayDescription": {
+    "en": "An incremental safety/usability layer you bolt onto any agent harness. It never replaces the agent — it adds guardrails: classify action risk, never make terminal decisions, desensitize outputs, ensure deliverables are visible, and demand sourced/falsifiable claims.",
+    "zh": "增量式安全/可用扶手层，架在任何智能体 harness 之上。不替代原 agent，只加扶手：动作风险分级、不代行终裁、输出脱敏、交付前端可见、主张须可证伪有源。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "把这个扶手层加载到当前 harness，按 runtime/guardrails.md 的最小红线自检接下来每一步。",
+    "en": "Load this handrail layer onto the current harness and self-check every next step against runtime/guardrails.md."
+  },
+  "plugin": "agent-handrail",
+  "tags": [
+    { "en": "Agent Safety", "zh": "智能体安全" },
+    { "en": "Usability Handrail", "zh": "可用扶手" },
+    { "en": "Incremental Layer", "zh": "增量层" }
+  ],
+  "quickPrompts": [
+    { "en": "Audit this agent's planned action for risk before executing.", "zh": "执行前先给这个 agent 的下一步动作做风险分级。" },
+    { "en": "Review my output for leaked secrets / PII before I send it.", "zh": "发出前先审我的输出有没有泄漏凭据/PII。" },
+    { "en": "Is this claim sourced or should I mark it unknown?", "zh": "这条主张有来源吗，没有就标未知。" }
+  ]
+}

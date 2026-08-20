@@ -1,0 +1,14 @@
+# OS 噪声
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 裸包 / 压缩（不进仓库）
+*.zip
+*.7z
+*.tar.gz
+
+# 本地敏感
+secrets/
+*.env
+*.env.local
